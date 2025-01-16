@@ -14,8 +14,6 @@ describe('testing button interaction', () => {
   it('should close modal after button click', () => {
     render(<Welcome />);
     const button = screen.getByText(/close/i);
-    console.log(button);
-
     fireEvent.click(button);
     const modalTitle = screen.queryByText('Welcome!');
     expect(modalTitle).not.toBeInTheDocument();

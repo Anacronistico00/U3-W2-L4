@@ -43,7 +43,7 @@ const SingleComment = (props) => {
 
   return (
     <Container fluid className='d-flex justify-content-between mb-3'>
-      <p>{props.comment}</p>
+      <p data-testid='single-comment'>{props.comment}</p>
       {isError && (
         <div className='text-center'>
           <Alert variant='danger'>
