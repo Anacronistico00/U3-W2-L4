@@ -11,6 +11,7 @@ const SingleBook = (props) => {
       onClick={() => {
         props.handleBookSelect(props.book.asin);
       }}
+      data-testid='single-book'
     >
       <Card.Img
         variant='top'

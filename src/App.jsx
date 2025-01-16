@@ -4,7 +4,7 @@ import Welcome from './components/Welcome';
 // import AllTheBooks from './components/AllTheBooks';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BookList from './components/BookList';
-import booksJson from '../src/data/fantasy.json';
+import booksJson from './data/fantasy.json';
 
 function App() {
   return (

@@ -53,6 +53,7 @@ const CommentArea = (props) => {
   return (
     <>
       <ul className='text-start p-0'>
+        <h5 className='text-center'>Comments</h5>
         {isLoading && (
           <div className='text-center'>
             <div>
@@ -84,7 +85,7 @@ const CommentArea = (props) => {
             <Alert variant='danger'>Si è verificato un errore</Alert>
           </div>
         )}
-        <h5 className='text-center'>Comments</h5>
+
         <CommentsList comments={comments} updateComments={getComments} />
         <hr />
       </ul>
